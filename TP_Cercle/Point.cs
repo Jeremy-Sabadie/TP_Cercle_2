@@ -30,13 +30,21 @@
             double surface = Math.PI * Math.Pow(rayon, 2);
             return surface;
         }
-        //TODO:construire la Méthode Perimetre.
-
+        /// <summary>
+        /// Méthode CalculerPerimetre qqqqqqqqui calcule le périmètre d'un cercle en fonction de son rayon.
+        /// </summary>
+        /// <param name="rayon"></param>
+        /// <returns></returns>
+        double CalculerPerimetre(int rayon)
+        {
+            double Perimeter = 2 * Math.PI * rayon;
+            return Perimeter;
+        }
         //TODO: finir la méthode Afficher.
         public void Afficher()
         {
-            Console.WriteLine($"Le périmètre est: {}");
-            Console.WriteLine($"La surface est: {}");
+            Console.WriteLine($"Le périmètre est: {CalculerPerimetre(r)}");
+            Console.WriteLine($"La surface est: {CalculerSurface(r)}");
         }
     }
 }
